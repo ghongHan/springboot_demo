@@ -1,0 +1,17 @@
+server:
+  port: 8089
+#  context-path: /hongHan_gao
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.16.30.33:3306/gaohh
+    username: root
+    password: Abc@123456
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+

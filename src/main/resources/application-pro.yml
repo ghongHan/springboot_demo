@@ -1,0 +1,21 @@
+server:
+  port: 8090
+#  context-path: /hongHan_gao
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  redis:
+      database: 0
+      host: 127.0.0.1
+      port: 6379
+      password:
+  datasource:
+      platform: postgres
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: gao826550
