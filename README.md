@@ -1,30 +1,24 @@
 # springboot-demo
 
 #### 项目介绍
-首次搭建的springboot项目，数据库采用postgres，并使用pg的存储过程查询数据；使用spring-data 简化数据库的访问，前端采用angularjs，集成redis
+首次搭建的springboot项目，数据库采用postgres，并使用pg的存储过程查询数据；使用spring-data 简化数据库的访问，前端采用angularjs，集成redis,集成支付宝app支付，微信app支付，集成swagger以便快速形成接口文档
 
 #### 软件架构
 软件架构说明
 
+#### 已集成功能
 
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+1. 阿里短信功能
+2. 支付宝app支付
+3. 微信app支付
+4. 禁止同一账号多人登录功能
+5. 定时器功能
+6. 工具类中实现以下功能：
+    (1). face++ 图片识别、身份证识别、银行卡识别
+    (2). JXL创建自定义excel、JXL解析excel
+    (3). poi 创建自定义Excel文件、POI解析excel
+    (4). ftp上传下载工具类
+    (5). MP3播放
 
 
 #### 码云特技
