@@ -14,6 +14,7 @@ import java.net.InetAddress;
 
 public class HttpUtil {
 
+    //获取终端ip
     public static String getRemoteIP(HttpServletRequest request){
         String ipAddress = request.getRemoteAddr();
         if(ipAddress.equals("127.0.0.1") || ipAddress.equals("0:0:0:0:0:0:0:1")){
