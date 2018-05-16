@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
  * Created by hongHan_gao
  * Date: 2018/3/14
  * 支付的最全参考文档：https://gitee.com/52itstyle/spring-boot-pay
+ * 支付宝统一下单接口见com.hskj.common.testAliPay
  */
 @Api(tags = "支付模块")
 @RestController
@@ -24,9 +25,15 @@ public class AliPayController {
     @Autowired
     private AliPayService aliPayService;
 
+    @ApiOperation(value="支付宝统一下单")
+    @RequestMapping(value = "/aliPay", method = RequestMethod.GET)
+    public ResponseEntity<Message> aliPay(){
+        return aliPayService.aliPay();
+    }
+
     @ApiOperation(value="支付宝支付通知")
     @RequestMapping(value = "/payNotify", method = RequestMethod.GET)
-    public ResponseEntity<Message> aliPay(HttpServletRequest request){
+    public ResponseEntity<Message> payNotify(HttpServletRequest request){
         return  aliPayService.aliPayNotify(request);
     }
 

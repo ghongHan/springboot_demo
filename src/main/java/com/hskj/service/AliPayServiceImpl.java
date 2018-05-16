@@ -1,7 +1,13 @@
 package com.hskj.service;
 
+import com.alibaba.fastjson.JSONObject;
 import com.alipay.api.AlipayApiException;
+import com.alipay.api.AlipayClient;
+import com.alipay.api.DefaultAlipayClient;
+import com.alipay.api.domain.AlipayTradeAppPayModel;
 import com.alipay.api.internal.util.AlipaySignature;
+import com.alipay.api.request.AlipayTradeAppPayRequest;
+import com.alipay.api.response.AlipayTradeAppPayResponse;
 import com.hskj.common.dto.Message;
 import com.hskj.common.dto.MessageType;
 import org.springframework.http.HttpStatus;
@@ -20,9 +26,36 @@ import java.util.Map;
 
 @Service
 public class AliPayServiceImpl implements AliPayService {
+
+    @Override
+    public ResponseEntity<Message> aliPay() {
+        String privateKey = "XXXXXXX";
+        String aLiPayPublicKey = "XXXXXXXXXX";
+        AlipayClient alipayClient = new DefaultAlipayClient("https://openapi.alipay.com/gateway.do", "2018031302367035", privateKey, "json", "utf-8",aLiPayPublicKey, "RSA2");
+        AlipayTradeAppPayRequest request = new AlipayTradeAppPayRequest();
+        AlipayTradeAppPayModel model = new AlipayTradeAppPayModel();
+        model.setBody("测试数据");
+        model.setSubject("App支付测试");
+        model.setOutTradeNo("201804202000025");
+        model.setTimeoutExpress("30m");
+        model.setTotalAmount("0.01");
+        model.setProductCode("QUICK_MSECURITY_PAY");
+        request.setBizModel(model);
+        request.setNotifyUrl("https://d1ce3ba2.ngrok.io/pay/payNotify");
+        try {
+            AlipayTradeAppPayResponse response = alipayClient.sdkExecute(request);
+            if(response.isSuccess()){
+                new ResponseEntity<Message>(new Message(MessageType.SUCCESS, "统一下单成功", response.getBody()), HttpStatus.OK);
+            }
+        } catch (AlipayApiException e) {
+            e.printStackTrace();
+        }
+        return new ResponseEntity<Message>(new Message(MessageType.ERROR, "统一下单失败"), HttpStatus.OK);
+    }
+
     @Override
     public ResponseEntity<Message> aliPayNotify(HttpServletRequest request) {
-        String alipaypublicKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5XRpO9UMCC61qaAeSd9jPzloZ/oTGGTh5CojlbC1U5lNhFdhEDFFzLcvHKSzvOgeiMbpWjVsNCCi/tUem1k2t6JSGuVvrrwFlxVxE3v47I5SDt6tWjxZmTWtLHUhcN2CK6MB8S1WrABm55oCS4hJqRMi0tOjjxFda3DTwh2g7B9wxnbcatOEJs7XQkl7EaPHlyfACbS2ECTiIke5u2OZy/S5C/83lLElA8saw48M0elsAlAAosqyWM6lODPf/Oll6s43NYR2KdPcpQJK7My574cn4rVGgyLPDH1k4VePKpkzQ6JmgJ/A2qzjX0GqyVVYQel4axso1BZECEDnMobDfwIDAQAB";
+        String alipaypublicKey = "XXXXXXXX";
         //获取支付宝POST过来反馈信息
         Map<String,String> params = new HashMap<String,String>();
         Map requestParams = request.getParameterMap();

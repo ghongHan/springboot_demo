@@ -13,5 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 
 public interface AliPayService {
 
+    public ResponseEntity<Message> aliPay();
+
     public ResponseEntity<Message> aliPayNotify(HttpServletRequest request);
 }
