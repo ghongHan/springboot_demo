@@ -145,6 +145,13 @@
 			<version>1.1.1</version>
 		</dependency>
 
+		<!--javaBean、map之间的转换-->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.3</version>
+		</dependency>
+
 		<!--FTP-->
 		<dependency>
 			<groupId>commons-net</groupId>
@@ -156,6 +163,13 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>1.2.45</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.2</version>
+			<classifier>jdk15</classifier>
 		</dependency>
 
 		<!--mp3-->

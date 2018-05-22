@@ -64,3 +64,486 @@
 2018-05-02 10:02:56.273 [Thread-4] INFO  o.s.w.context.support.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@6b6776cb: startup date [Wed May 02 10:02:50 CST 2018]; root of context hierarchy
 2018-05-02 10:02:56.283 [Thread-4] INFO  o.s.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
 2018-05-02 10:02:56.293 [Thread-4] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 13:43:55.073 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - Starting SpringbootDemoApplication on PC201602191211 with PID 8532 (E:\springboot_demo\target\classes started by Administrator in E:\springboot_demo)
+2018-05-02 13:43:55.073 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - The following profiles are active: pro
+2018-05-02 13:43:55.143 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-05-02 13:43:55.323 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f73cce6: startup date [Wed May 02 13:43:55 CST 2018]; root of context hierarchy
+2018-05-02 13:43:56.508 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 13:43:56.561 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 13:43:56.586 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.RailwayStationRepository.
+2018-05-02 13:43:56.589 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.TrainRepository.
+2018-05-02 13:43:57.033 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2699d969] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-02 13:43:57.313 [restartedMain] INFO  org.eclipse.jetty.util.log - Logging initialized @3109ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-05-02 13:43:57.565 [restartedMain] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8090
+2018-05-02 13:43:57.566 [restartedMain] INFO  org.eclipse.jetty.server.Server - jetty-9.4.7.v20170914
+2018-05-02 13:43:57.628 [restartedMain] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2018-05-02 13:43:57.628 [restartedMain] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2018-05-02 13:43:57.638 [restartedMain] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2018-05-02 13:43:57.638 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2018-05-02 13:43:57.638 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2315 ms
+2018-05-02 13:43:57.788 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-02 13:43:57.788 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-02 13:43:57.788 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-02 13:43:57.788 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-02 13:43:57.788 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-02 13:43:57.788 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@593dc02a{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.5435703062553343004.8090/, jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],AVAILABLE}
+2018-05-02 13:43:57.788 [restartedMain] INFO  org.eclipse.jetty.server.Server - Started @3583ms
+2018-05-02 13:43:58.088 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-02 13:43:58.098 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-02 13:43:58.148 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-02 13:43:58.148 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-02 13:43:58.148 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-02 13:43:58.188 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-02 13:43:58.664 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-02 13:43:58.764 [restartedMain] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-05-02 13:43:58.774 [restartedMain] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@685ff23f
+2018-05-02 13:43:59.039 [restartedMain] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-05-02 13:43:59.119 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 13:43:59.862 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/payNotify],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.AliPayController.aliPay(javax.servlet.http.HttpServletRequest)
+2018-05-02 13:43:59.862 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login.do]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.LoginController.login(com.hskj.common.dto.UserDto,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-05-02 13:43:59.862 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/code/random],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.RandomCodeController.getMsgCode(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-05-02 13:43:59.862 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/getValue]}" onto public java.lang.String com.hskj.controller.RedisController.getKey(java.lang.String)
+2018-05-02 13:43:59.862 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/addStrValue]}" onto public java.lang.String com.hskj.controller.RedisController.setString(java.lang.String,java.lang.String)
+2018-05-02 13:43:59.862 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/getZSet]}" onto public java.lang.String com.hskj.controller.RedisController.getZSet(java.lang.String,double,double)
+2018-05-02 13:43:59.872 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/train/addTrain],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.TrainController.addTrain(com.hskj.common.dto.TrainDto)
+2018-05-02 13:43:59.872 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/train/allTrains],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.TrainController.getAllTrains()
+2018-05-02 13:43:59.872 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/train/getAllTrain],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.TrainController.getAllTrains(java.lang.Long)
+2018-05-02 13:43:59.872 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/train/getTrainByStationId],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.TrainController.getTrainByStationId(java.lang.Long)
+2018-05-02 13:43:59.872 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-02 13:43:59.872 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-02 13:43:59.872 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-02 13:43:59.872 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-02 13:43:59.872 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-02 13:44:00.034 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-02 13:44:00.264 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f73cce6: startup date [Wed May 02 13:43:55 CST 2018]; root of context hierarchy
+2018-05-02 13:44:00.294 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-05-02 13:44:00.304 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-02 13:44:00.304 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-02 13:44:00.363 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-02 13:44:00.402 [restartedMain] WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-05-02 13:44:00.628 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-05-02 13:44:00.990 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-05-02 13:44:01.140 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-05-02 13:44:01.150 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-05-02 13:44:01.150 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-05-02 13:44:01.160 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-05-02 13:44:01.190 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-05-02 13:44:01.310 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllTrainsUsingGET_1
+2018-05-02 13:44:01.340 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-02 13:44:01.340 [restartedMain] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-02 13:44:01.360 [restartedMain] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2018-05-02 13:44:01.382 [restartedMain] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@3bf6be9b{HTTP/1.1,[http/1.1]}{0.0.0.0:8090}
+2018-05-02 13:44:01.384 [restartedMain] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 8090 (http/1.1)
+2018-05-02 13:44:01.389 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - Started SpringbootDemoApplication in 6.619 seconds (JVM running for 7.176)
+2018-05-02 13:44:24.005 [qtp133084637-26] INFO  com.hskj.aspect.HttpAspect - ulr = /train/getAllTrain
+2018-05-02 13:44:24.005 [qtp133084637-26] INFO  com.hskj.aspect.HttpAspect - method = GET
+2018-05-02 13:44:24.005 [qtp133084637-26] INFO  com.hskj.aspect.HttpAspect - params = 
+2018-05-02 13:44:24.005 [qtp133084637-26] INFO  com.hskj.aspect.HttpAspect - 请求getAllTrains（）方法之前，记录日志
+2018-05-02 13:44:24.043 [qtp133084637-26] DEBUG org.hibernate.SQL - select get_trains(?)
+2018-05-02 13:44:24.050 [qtp133084637-26] TRACE org.hibernate.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [1]
+2018-05-02 13:44:24.109 [qtp133084637-26] INFO  com.hskj.aspect.HttpAspect - 请求getAllTrains（）方法之后，记录日志
+2018-05-02 13:44:24.114 [qtp133084637-26] INFO  com.hskj.aspect.HttpAspect - response = <200 OK,Message(status=SUCCESS, error=null, data=[{"name":"京—九高铁","speed":"548"}, {"name":"铜—闽高铁","speed":"543"}, {"name":"港—粤动车","speed":"735"}, {"name":"港—澳动车","speed":"800"}]),{}>
+2018-05-02 17:39:51.080 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - Starting SpringbootDemoApplication on PC201602191211 with PID 9144 (E:\springboot_demo\target\classes started by Administrator in E:\springboot_demo)
+2018-05-02 17:39:51.083 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - The following profiles are active: pro
+2018-05-02 17:39:51.252 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-05-02 17:39:51.339 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@528475aa: startup date [Wed May 02 17:39:51 CST 2018]; root of context hierarchy
+2018-05-02 17:39:52.703 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 17:39:52.749 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 17:39:52.774 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.RailwayStationRepository.
+2018-05-02 17:39:52.775 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.TrainRepository.
+2018-05-02 17:39:53.175 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6a2d792] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-02 17:39:53.467 [restartedMain] INFO  org.eclipse.jetty.util.log - Logging initialized @3235ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-05-02 17:39:53.714 [restartedMain] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8090
+2018-05-02 17:39:53.715 [restartedMain] INFO  org.eclipse.jetty.server.Server - jetty-9.4.7.v20170914
+2018-05-02 17:39:53.789 [restartedMain] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2018-05-02 17:39:53.790 [restartedMain] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2018-05-02 17:39:53.792 [restartedMain] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2018-05-02 17:39:53.797 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2018-05-02 17:39:53.797 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2458 ms
+2018-05-02 17:39:53.943 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-02 17:39:53.945 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-02 17:39:53.946 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-02 17:39:53.946 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-02 17:39:53.946 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-02 17:39:53.951 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@2466eaee{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.5671954808481695838.8090/, jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],AVAILABLE}
+2018-05-02 17:39:53.951 [restartedMain] INFO  org.eclipse.jetty.server.Server - Started @3719ms
+2018-05-02 17:39:54.241 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:39:54.251 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-02 17:39:54.301 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-02 17:39:54.303 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-02 17:39:54.303 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-02 17:39:54.336 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-02 17:39:54.830 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-02 17:39:54.937 [restartedMain] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-05-02 17:39:54.938 [restartedMain] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2b6dc590
+2018-05-02 17:39:55.220 [restartedMain] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-05-02 17:39:55.308 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:39:55.786 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wxPayController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'NOTIFY_URL' in value "${NOTIFY_URL}"
+2018-05-02 17:39:55.787 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:39:55.808 [restartedMain] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2018-05-02 17:39:55.813 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@2466eaee{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.5671954808481695838.8090/, jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],UNAVAILABLE}
+2018-05-02 17:39:55.832 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-02 17:39:55.871 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wxPayController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'NOTIFY_URL' in value "${NOTIFY_URL}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.hskj.SpringbootDemoApplication.main(SpringbootDemoApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'NOTIFY_URL' in value "${NOTIFY_URL}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+2018-05-02 17:40:55.780 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - Starting SpringbootDemoApplication on PC201602191211 with PID 7808 (E:\springboot_demo\target\classes started by Administrator in E:\springboot_demo)
+2018-05-02 17:40:55.783 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - The following profiles are active: pro
+2018-05-02 17:40:55.870 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-05-02 17:40:56.158 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4640fb44: startup date [Wed May 02 17:40:56 CST 2018]; root of context hierarchy
+2018-05-02 17:40:57.412 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 17:40:57.460 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 17:40:57.485 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.RailwayStationRepository.
+2018-05-02 17:40:57.486 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.TrainRepository.
+2018-05-02 17:40:57.951 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d8ae66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-02 17:40:58.249 [restartedMain] INFO  org.eclipse.jetty.util.log - Logging initialized @3476ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-05-02 17:40:58.509 [restartedMain] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8090
+2018-05-02 17:40:58.510 [restartedMain] INFO  org.eclipse.jetty.server.Server - jetty-9.4.7.v20170914
+2018-05-02 17:40:58.586 [restartedMain] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2018-05-02 17:40:58.586 [restartedMain] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2018-05-02 17:40:58.588 [restartedMain] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2018-05-02 17:40:58.594 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2018-05-02 17:40:58.594 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2436 ms
+2018-05-02 17:40:58.750 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-02 17:40:58.753 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-02 17:40:58.753 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-02 17:40:58.754 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-02 17:40:58.754 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-02 17:40:58.759 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@7cf24db{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.7263214956197695788.8090/, jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],AVAILABLE}
+2018-05-02 17:40:58.760 [restartedMain] INFO  org.eclipse.jetty.server.Server - Started @3987ms
+2018-05-02 17:40:59.089 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:40:59.100 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-02 17:40:59.150 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-02 17:40:59.151 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-02 17:40:59.152 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-02 17:40:59.184 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-02 17:40:59.711 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-02 17:40:59.819 [restartedMain] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-05-02 17:40:59.820 [restartedMain] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5712247d
+2018-05-02 17:41:00.112 [restartedMain] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-05-02 17:41:00.194 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:41:00.606 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wxPayController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'NOTIFY_URL' in value "${NOTIFY_URL}"
+2018-05-02 17:41:00.607 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:41:00.615 [restartedMain] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2018-05-02 17:41:00.619 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@7cf24db{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.7263214956197695788.8090/, jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],UNAVAILABLE}
+2018-05-02 17:41:00.634 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-02 17:41:00.641 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'wxPayController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'NOTIFY_URL' in value "${NOTIFY_URL}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.hskj.SpringbootDemoApplication.main(SpringbootDemoApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'NOTIFY_URL' in value "${NOTIFY_URL}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+2018-05-02 17:45:06.045 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - Starting SpringbootDemoApplication on PC201602191211 with PID 1156 (E:\springboot_demo\target\classes started by Administrator in E:\springboot_demo)
+2018-05-02 17:45:06.051 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - The following profiles are active: pro
+2018-05-02 17:45:06.162 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-05-02 17:45:06.486 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70939ae6: startup date [Wed May 02 17:45:06 CST 2018]; root of context hierarchy
+2018-05-02 17:45:07.945 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 17:45:07.991 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 17:45:08.017 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.RailwayStationRepository.
+2018-05-02 17:45:08.018 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.TrainRepository.
+2018-05-02 17:45:08.417 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$abc54da1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-02 17:45:08.765 [restartedMain] INFO  org.eclipse.jetty.util.log - Logging initialized @3590ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-05-02 17:45:09.006 [restartedMain] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8090
+2018-05-02 17:45:09.008 [restartedMain] INFO  org.eclipse.jetty.server.Server - jetty-9.4.7.v20170914
+2018-05-02 17:45:09.081 [restartedMain] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2018-05-02 17:45:09.081 [restartedMain] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2018-05-02 17:45:09.084 [restartedMain] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2018-05-02 17:45:09.091 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2018-05-02 17:45:09.091 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2605 ms
+2018-05-02 17:45:09.239 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-02 17:45:09.241 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-02 17:45:09.241 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-02 17:45:09.241 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-02 17:45:09.241 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-02 17:45:09.245 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@2d0a341c{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.4064732456484548675.8090/, jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],AVAILABLE}
+2018-05-02 17:45:09.246 [restartedMain] INFO  org.eclipse.jetty.server.Server - Started @4071ms
+2018-05-02 17:45:09.546 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:45:09.559 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-02 17:45:09.615 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-02 17:45:09.616 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-02 17:45:09.617 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-02 17:45:09.651 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-02 17:45:10.143 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-02 17:45:10.256 [restartedMain] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-05-02 17:45:10.257 [restartedMain] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@41a028cb
+2018-05-02 17:45:10.520 [restartedMain] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-05-02 17:45:10.604 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:45:10.978 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'WXPayConfigImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'KEY' in value "${KEY}"
+2018-05-02 17:45:10.979 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:45:10.987 [restartedMain] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2018-05-02 17:45:10.989 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@2d0a341c{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.4064732456484548675.8090/, jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],UNAVAILABLE}
+2018-05-02 17:45:11.001 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-02 17:45:11.008 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'WXPayConfigImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'KEY' in value "${KEY}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.hskj.SpringbootDemoApplication.main(SpringbootDemoApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'KEY' in value "${KEY}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+2018-05-02 17:48:19.922 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - Starting SpringbootDemoApplication on PC201602191211 with PID 8672 (E:\springboot_demo\target\classes started by Administrator in E:\springboot_demo)
+2018-05-02 17:48:19.925 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - The following profiles are active: pro
+2018-05-02 17:48:20.060 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-05-02 17:48:20.274 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f73cce6: startup date [Wed May 02 17:48:20 CST 2018]; root of context hierarchy
+2018-05-02 17:48:21.430 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 17:48:21.476 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 17:48:21.502 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.RailwayStationRepository.
+2018-05-02 17:48:21.503 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.TrainRepository.
+2018-05-02 17:48:22.017 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4e71550] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-02 17:48:22.308 [restartedMain] INFO  org.eclipse.jetty.util.log - Logging initialized @3389ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-05-02 17:48:22.552 [restartedMain] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8090
+2018-05-02 17:48:22.553 [restartedMain] INFO  org.eclipse.jetty.server.Server - jetty-9.4.7.v20170914
+2018-05-02 17:48:22.624 [restartedMain] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2018-05-02 17:48:22.624 [restartedMain] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2018-05-02 17:48:22.627 [restartedMain] INFO  org.eclipse.jetty.server.session - Scavenging every 660000ms
+2018-05-02 17:48:22.632 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2018-05-02 17:48:22.632 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2358 ms
+2018-05-02 17:48:22.778 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-02 17:48:22.783 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-02 17:48:22.783 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-02 17:48:22.783 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-02 17:48:22.783 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-02 17:48:22.788 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@6dcbbfa3{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.8868479442732262461.8090/, jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],AVAILABLE}
+2018-05-02 17:48:22.790 [restartedMain] INFO  org.eclipse.jetty.server.Server - Started @3871ms
+2018-05-02 17:48:23.115 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:48:23.125 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-02 17:48:23.174 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-02 17:48:23.175 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-02 17:48:23.176 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-02 17:48:23.208 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-02 17:48:23.714 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-02 17:48:23.822 [restartedMain] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-05-02 17:48:23.824 [restartedMain] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@79e7aa53
+2018-05-02 17:48:24.110 [restartedMain] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-05-02 17:48:24.194 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:48:24.978 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/payNotify],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.AliPayController.aliPay(javax.servlet.http.HttpServletRequest)
+2018-05-02 17:48:24.979 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login.do]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.LoginController.login(com.hskj.common.dto.UserDto,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-05-02 17:48:24.980 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/code/random],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.RandomCodeController.getMsgCode(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-05-02 17:48:24.981 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/getValue]}" onto public java.lang.String com.hskj.controller.RedisController.getKey(java.lang.String)
+2018-05-02 17:48:24.981 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/addStrValue]}" onto public java.lang.String com.hskj.controller.RedisController.setString(java.lang.String,java.lang.String)
+2018-05-02 17:48:24.981 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/redis/getZSet]}" onto public java.lang.String com.hskj.controller.RedisController.getZSet(java.lang.String,double,double)
+2018-05-02 17:48:24.983 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/train/addTrain],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.TrainController.addTrain(com.hskj.common.dto.TrainDto)
+2018-05-02 17:48:24.984 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/train/allTrains],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.TrainController.getAllTrains()
+2018-05-02 17:48:24.984 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/train/getAllTrain],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.TrainController.getAllTrains(java.lang.Long)
+2018-05-02 17:48:24.984 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/train/getTrainByStationId],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.TrainController.getTrainByStationId(java.lang.Long)
+2018-05-02 17:48:24.985 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wxPay/unifiedOrder]}" onto public org.springframework.http.ResponseEntity<com.hskj.common.dto.Message> com.hskj.controller.WxPayController.unifiedOrder(javax.servlet.http.HttpServletRequest)
+2018-05-02 17:48:24.987 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-02 17:48:24.988 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-02 17:48:24.989 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-02 17:48:24.991 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-02 17:48:24.991 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-02 17:48:25.155 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-05-02 17:48:25.422 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2f73cce6: startup date [Wed May 02 17:48:20 CST 2018]; root of context hierarchy
+2018-05-02 17:48:25.463 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2018-05-02 17:48:25.477 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-02 17:48:25.477 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-02 17:48:25.533 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-02 17:48:25.571 [restartedMain] WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-05-02 17:48:25.838 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2018-05-02 17:48:26.228 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2018-05-02 17:48:26.371 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-05-02 17:48:26.380 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-05-02 17:48:26.381 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-05-02 17:48:26.401 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-05-02 17:48:26.434 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-05-02 17:48:26.591 [restartedMain] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getAllTrainsUsingGET_1
+2018-05-02 17:48:26.633 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-05-02 17:48:26.634 [restartedMain] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-02 17:48:26.655 [restartedMain] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-05-02 17:48:26.683 [restartedMain] INFO  org.eclipse.jetty.server.AbstractConnector - Started ServerConnector@5b75f7f8{HTTP/1.1,[http/1.1]}{0.0.0.0:8090}
+2018-05-02 17:48:26.686 [restartedMain] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer - Jetty started on port(s) 8090 (http/1.1)
+2018-05-02 17:48:26.692 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - Started SpringbootDemoApplication in 7.097 seconds (JVM running for 7.773)
+2018-05-02 17:54:06.458 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - Starting SpringbootDemoApplication on PC201602191211 with PID 9160 (E:\springboot_demo\target\classes started by Administrator in E:\springboot_demo)
+2018-05-02 17:54:06.460 [restartedMain] INFO  com.hskj.SpringbootDemoApplication - The following profiles are active: pro
+2018-05-02 17:54:06.530 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2018-05-02 17:54:06.880 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@25fc91ea: startup date [Wed May 02 17:54:06 CST 2018]; root of context hierarchy
+2018-05-02 17:54:08.165 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 17:54:08.211 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-05-02 17:54:08.237 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.RailwayStationRepository.
+2018-05-02 17:54:08.238 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hskj.repository.TrainRepository.
+2018-05-02 17:54:08.642 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$112378d5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-05-02 17:54:08.931 [restartedMain] INFO  org.eclipse.jetty.util.log - Logging initialized @3504ms to org.eclipse.jetty.util.log.Slf4jLog
+2018-05-02 17:54:09.171 [restartedMain] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory - Server initialized with port: 8090
+2018-05-02 17:54:09.173 [restartedMain] INFO  org.eclipse.jetty.server.Server - jetty-9.4.7.v20170914
+2018-05-02 17:54:09.246 [restartedMain] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+2018-05-02 17:54:09.246 [restartedMain] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+2018-05-02 17:54:09.249 [restartedMain] INFO  org.eclipse.jetty.server.session - Scavenging every 600000ms
+2018-05-02 17:54:09.254 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+2018-05-02 17:54:09.254 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2374 ms
+2018-05-02 17:54:09.404 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-05-02 17:54:09.407 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-02 17:54:09.407 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-02 17:54:09.407 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-02 17:54:09.408 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-02 17:54:09.412 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler - Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@11d03b0f{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.2777664808987151147.8090/, jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],AVAILABLE}
+2018-05-02 17:54:09.412 [restartedMain] INFO  org.eclipse.jetty.server.Server - Started @3986ms
+2018-05-02 17:54:09.742 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:54:09.754 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-05-02 17:54:09.808 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2018-05-02 17:54:09.809 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-05-02 17:54:09.810 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-05-02 17:54:09.845 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-05-02 17:54:10.418 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-02 17:54:10.545 [restartedMain] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-05-02 17:54:10.546 [restartedMain] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@111f6354
+2018-05-02 17:54:10.827 [restartedMain] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2018-05-02 17:54:10.913 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:54:11.318 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'WXPayConfigImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'KEY' in value "${KEY}"
+2018-05-02 17:54:11.319 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-05-02 17:54:11.329 [restartedMain] INFO  org.eclipse.jetty.server.session - Stopped scavenging
+2018-05-02 17:54:11.333 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler - Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@11d03b0f{/,[file:///C:/Users/Administrator/AppData/Local/Temp/jetty-docbase.2777664808987151147.8090/, jar:file:/C:/Users/Administrator/.m2/repository/io/springfox/springfox-swagger-ui/2.7.0/springfox-swagger-ui-2.7.0.jar!/META-INF/resources],UNAVAILABLE}
+2018-05-02 17:54:11.345 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-05-02 17:54:11.353 [restartedMain] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'WXPayConfigImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'KEY' in value "${KEY}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.hskj.SpringbootDemoApplication.main(SpringbootDemoApplication.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'KEY' in value "${KEY}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:236)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer$2.resolveStringValue(PropertySourcesPlaceholderConfigurer.java:172)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:831)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
