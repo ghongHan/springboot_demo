@@ -36,7 +36,6 @@ import java.util.TreeMap;
 public class WxPayController {
 
     private WXPay wxPay;
-
     private WXPayConfigImpl config;
 
     public WxPayController(){
@@ -152,5 +151,29 @@ public class WxPayController {
         out.flush();
         out.close();
         return resultMSg;
+    }
+
+    @ApiOperation(value="微信申请退款")
+    @RequestMapping("/refund")
+    public String refund(){
+        Map<String, String> param = new HashMap<>();
+        param.put("out_trade_no", "HHDC20180528174303P354");
+        param.put("out_refund_no", "HHDC20180528174303P354");
+        param.put("total_fee", "10000");
+        param.put("refund_fee", "10000");
+        param.put("refund_fee_type", "CNY");
+        Map<String, String> resultMap = null;
+        String result = null;
+        try {
+            resultMap = wxPay.refund(param);
+            if("SUCCESS".equals(resultMap.get("result_code"))){
+                result = "退款成功";
+            }else{
+                result = "退款失败";
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 }
