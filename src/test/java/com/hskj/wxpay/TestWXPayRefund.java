@@ -1,4 +1,4 @@
-package com.hskj;
+package com.hskj.wxpay;
 
 import com.github.wxpay.sdk.WXPay;
 import com.hskj.service.WXPayConfigImpl;
@@ -9,6 +9,7 @@ import java.util.Map;
 /**
  * Created by hongHan_gao
  * Date: 2018/5/28
+ * 测试微信退款
  */
 
 

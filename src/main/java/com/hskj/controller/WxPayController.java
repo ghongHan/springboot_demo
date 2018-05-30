@@ -176,4 +176,22 @@ public class WxPayController {
         }
         return result;
     }
+
+    @ApiOperation(value="微信订单查询")
+    @RequestMapping("/orderQuery")
+    public void orderQuery(){
+        try {
+            Map<String, String> param = new HashMap<>();
+            param.put("out_trade_no", "HHDC20180528174303P354");
+            param.put("out_refund_no", "HHDC20180528174303P354");
+            param.put("total_fee", "10000");
+            param.put("refund_fee", "10000");
+            param.put("refund_fee_type", "CNY");
+            Map<String, String> result = wxPay.orderQuery(param);
+            System.out.println(result);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 }
