@@ -16,9 +16,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import java.util.Timer;
-import java.util.TimerTask;
 
 /**
  * Created by hongHan_gao
