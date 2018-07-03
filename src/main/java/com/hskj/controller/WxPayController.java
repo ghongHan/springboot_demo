@@ -50,54 +50,60 @@ public class WxPayController {
         String prepayId = null;
         String sign = null;
         String nonce_str = null;
+        Map<String, Object> resParam = new HashMap<>();
 
         //统一下单参数
         String remoteIP = HttpUtil.getRemoteIP(request);
         Map<String, String> param = new HashMap<String, String>();
-        param.put("body","恒胜科技网约车平台");
-        param.put("out_trade_no","20180502163256");
-        param.put("total_fee","1");
-        param.put("spbill_create_ip", remoteIP);
-        param.put("notify_url", "http://app.lvshuicar.com/autocar_wechat/wxPay/notify");
+        param.put("body","租车费用_10.00");
+        param.put("out_trade_no","HHDC20180702201928S10078");
+        param.put("total_fee","1000");
+        param.put("spbill_create_ip", "172.16.30.3");
+        param.put("notify_url", "http://112.17.127.21:35050/wxpay_notify/notify");
         param.put("trade_type", "APP");
         try {
             //微信统一下单时会进行第一次签名
             Map<String, String> result = wxPay.unifiedOrder(param);
             //进行签名校验
             if(wxPay.isResponseSignatureValid(result)){
-                Set<String> keys = result.keySet();
-                for(String key : keys){
-                    switch (key){
-                        case "prepay_id":
-                            prepayId = result.get(key);
-                            continue;
-                        case "nonce_str":
-                            nonce_str = result.get(key);
-                            continue;
+                if(!result.get("result_code").equals("FAIL")){
+                    Set<String> keys = result.keySet();
+                    for(String key : keys){
+                        switch (key){
+                            case "prepay_id":
+                                prepayId = result.get(key);
+                                continue;
+                            case "nonce_str":
+                                nonce_str = result.get(key);
+                                continue;
+                        }
                     }
+                    //返回的参数
+                    resParam.put("appid", config.getAppID());
+                    resParam.put("partnerid", config.getMchID());
+                    resParam.put("prepayid", prepayId);
+                    resParam.put("package", "Sign=WXPay");
+                    resParam.put("noncestr", nonce_str);
+                    resParam.put("timestamp", System.currentTimeMillis()/1000);
+
+                    //二次签名
+                    Map<String, String> secondParams = new TreeMap<>();
+                    secondParams.put("appid", config.getAppID());
+                    secondParams.put("partnerid", config.getMchID());
+                    secondParams.put("prepayid", prepayId);
+                    secondParams.put("noncestr", nonce_str);
+                    secondParams.put("timestamp", String.valueOf(System.currentTimeMillis()/1000));
+                    secondParams.put("package", "Sign=WXPay");
+                    String secondSign = WXPayUtil.generateSignature(secondParams, config.getKey(), WXPayConstants.SignType.MD5);
+
+                    resParam.put("sign", secondSign);
+
+                    return new ResponseEntity<Message>(new Message(MessageType.SUCCESS, resParam), HttpStatus.OK);
+                }else{
+                    resParam.put("err_code", result.get("err_code"));
+                    resParam.put("err_code_des",result.get("err_code_des"));
+                    return new ResponseEntity<Message>(new Message(MessageType.ERROR, resParam), HttpStatus.OK);
                 }
-                //返回的参数
-                Map<String, Object> resParam = new HashMap<>();
-                resParam.put("appid", config.getAppID());
-                resParam.put("partnerid", config.getMchID());
-                resParam.put("prepayid", prepayId);
-                resParam.put("package", "Sign=WXPay");
-                resParam.put("noncestr", nonce_str);
-                resParam.put("timestamp", System.currentTimeMillis()/1000);
-
-                //二次签名
-                Map<String, String> secondParams = new TreeMap<>();
-                secondParams.put("appid", config.getAppID());
-                secondParams.put("partnerid", config.getMchID());
-                secondParams.put("prepayid", prepayId);
-                secondParams.put("noncestr", nonce_str);
-                secondParams.put("timestamp", String.valueOf(System.currentTimeMillis()/1000));
-                secondParams.put("package", "Sign=WXPay");
-                String secondSign = WXPayUtil.generateSignature(secondParams, config.getKey(), WXPayConstants.SignType.MD5);
-
-                resParam.put("sign", secondSign);
-
-                return new ResponseEntity<Message>(new Message(MessageType.SUCCESS, resParam), HttpStatus.OK);
             }
         } catch (Exception e) {
             e.printStackTrace();
