@@ -1,7 +1,10 @@
 package com.hskj.common.util;
 
 import com.google.common.base.Strings;
+import org.apache.commons.lang3.StringUtils;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
@@ -108,6 +111,28 @@ public class StringUtil {
             }
             return stringBuilder == null? null : stringBuilder.toString().split(";");
         }
+    }
+
+    //将对象中类型为String且属性值为null的，转化为空字符串
+    public static Object nullEmpty(Object object) throws Exception {
+        Class classT = object.getClass();
+        Field[] fields = classT.getDeclaredFields();
+        for (Field field : fields) {
+            if (String.class == field.getType()) {
+                //将属性值首字母转化成大写
+                char[] chars = field.getName().toCharArray();
+                chars[0] -= 32;
+                String methodGetName = "get" + String.valueOf(chars);
+                String methodSetName = "set" + String.valueOf(chars);
+                Method getMethod = classT.getMethod(methodGetName, null);
+                Method setMethod = classT.getMethod(methodSetName, String.class);
+                Object value = getMethod.invoke(object, null);
+                if (StringUtils.equalsAny(String.valueOf(value), null, "NULL", "null")) {
+                    setMethod.invoke(object, "");
+                }
+            }
+        }
+        return object;
     }
 
     public static void main(String[] args){
