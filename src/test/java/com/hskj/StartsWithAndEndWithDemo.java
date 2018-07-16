@@ -25,6 +25,7 @@ public class StartsWithAndEndWithDemo {
         stringBuilder.deleteCharAt(0);
         System.out.println(stringBuilder.toString());
         System.out.println(ObjectUtils.firstNonNull(null,str, param));
+        System.out.println("将字符串转化为数组：" + str.toCharArray());
     }
 
 }

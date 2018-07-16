@@ -43,17 +43,17 @@ public class WXPayConfigImpl implements WXPayConfig {
 
     @Override
     public String getAppID() {
-        return "XXXXXXXXX";
+        return "wx773e639c6f6fa63f";
     }
 
     @Override
     public String getMchID() {
-        return "XXXXXXXXXXXXX";
+        return "1503828351";
     }
 
     @Override
     public String getKey() {
-        return "XXXXXXXXXXXXX";
+        return "f25gf43d5g3d4fg23d87rg396d5g23d8";
     }
 
     @Override

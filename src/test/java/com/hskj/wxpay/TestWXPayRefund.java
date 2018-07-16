@@ -24,6 +24,7 @@ public class TestWXPayRefund {
         param.put("total_fee", "10000");
         param.put("refund_fee", "10000");
         param.put("refund_fee_type", "CNY");
+        param.put("notify_url", "http://112.17.127.21:35050/wxpay_notify/notify");
         try {
             System.out.println(wxpay.refund(param));
         } catch (Exception e) {

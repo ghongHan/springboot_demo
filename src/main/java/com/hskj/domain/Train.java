@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
+import org.apache.solr.client.solrj.beans.Field;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -27,20 +28,26 @@ import java.util.Date;
 public class Train implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Field
     private Long id;
 
+    @Field
     private String name;
 
+    @Field
     private Integer speed;
 
+    @Field
     private Boolean diesel;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "station_id")
+    @Field
     private RailwayStation railwayStation;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 //  @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @Field
     private Date createTime;
 
     //@NoArgsConstructor代替
