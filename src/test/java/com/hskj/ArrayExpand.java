@@ -16,7 +16,6 @@ public class ArrayExpand {
         param = Arrays.copyOf(param, param.length + 1);
         param[param.length - 1] = 4;
         System.out.println(Arrays.toString(param));
-        String s;
     }
 
 }
