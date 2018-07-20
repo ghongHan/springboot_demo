@@ -25,24 +25,41 @@ public class ArrayListSort {
         params.add(new Boy("wangWu", 23, 9));
         params.add(new Boy("liHao", 20, 8));
 
-        Collections.sort(params, new Comparator<Boy>() {
+        //1.按年龄的大小，升序排列
+        Comparator<Boy> sortByAge = new Comparator<Boy>() {
             @Override
             public int compare(Boy o1, Boy o2) {
-                if((o1.getAge() - o2.getAge()) > 0){
-                    return 1;
-                }else if((o1.getAge() - o2.getAge()) < 0){
-                    return -1;
+                return o1.getAge() > o2.getAge()? 1:
+                        o1.getAge() < o2.getAge()? -1: 0;
+            }
+        };
+        Collections.sort(params, sortByAge);
+
+        //2.按id的大小，降序排列
+        Comparator<Boy> descSortById = new Comparator<Boy>() {
+            @Override
+            public int compare(Boy o1, Boy o2) {
+                return -(o1.getId() > o2.getId()? 1:
+                        o1.getId() < o2.getId()? -1: 0);
+            }
+        };
+        Collections.sort(params, descSortById);
+
+        //3.按年龄升序，按id降序-即先按年龄升序排列，相同的年龄再按id降序
+        Comparator<Boy> sortByAgeAndId = new Comparator<Boy>() {
+            @Override
+            public int compare(Boy o1, Boy o2) {
+                if(o1.getAge() != o2.getAge()){
+                    return o1.getAge() > o2.getAge()? 1: -1;
                 }else{
-                    return o1.getName().compareTo(o2.getName());
+                    return o1.getId() > o2.getId()? 1:
+                            o2.getId() < o2.getId()? -1: 0;
                 }
             }
-        });
-
-        for (Boy boy : params){
-            System.out.println(boy);
-        }
+        };
+        Collections.sort(params, sortByAgeAndId);
+        System.out.println(params);
     }
-
 }
 
 @Data
