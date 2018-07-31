@@ -2,8 +2,7 @@ package com.hskj;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.*;
 
 /**
  * Created by hongHan_gao
@@ -24,6 +23,9 @@ public class OverrideEquals {
         emps.add(new Emp("Jack", 6000));
 
         System.out.println(emps.contains(new Emp("Eric", 8000)));
+        System.out.println(UUID.randomUUID().toString().replace("-", ""));
+
+        Map<String, Emp> param = new HashMap<>(10);
     }
 }
 
